@@ -124,7 +124,7 @@ header .icon a {
     color: rgba(0, 0, 0, 0.4);
     padding-left: 10px;
 }
-header .icon .bar {display: block;}
+header .icon .bar {display: none;}
 
 .mobileMenu {display: none;}
 .mobileMenuBg {}
