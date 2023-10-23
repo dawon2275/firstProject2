@@ -1,0 +1,317 @@
+@charset "utf-8";
+@import url(../css/fonts.css);
+@import url(reset.css);
+
+html {font-size: 16px;}
+body { font:400 16px "Noto Sans KR", sans-serif; position: relative;}
+h2 {font-size: 2.188rem; margin-bottom: 0.938em; font-weight: 500;}
+
+/* ------------------------------------------------------- .fixedBanner------------------------------------------------ */
+.fixedBanner {
+    position: fixed;
+    bottom: 50px; right:30px;
+    width: 85px; height: 90px;
+    background: rgba(238, 127, 75, 0.856);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 100;
+    text-align: center;
+}
+.fixedBanner a {display: block;}
+.fixedBanner a img { width: 41px; height: 41px; padding:8px 20px 0 20px;}
+.fixedBanner a p { display: inline-block;  font-size: 12px; color: #fff;}
+
+.fixedBanner {
+    position: fixed;
+    bottom: 50px; right:30px;
+    width: 85px; height: 90px;
+    background: rgba(238, 127, 75, 0.856);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 100;
+    text-align: center;
+}
+.fixedBanner a {display: block;}
+.fixedBanner a img { width: 41px; height: 41px; padding:8px 20px 0 20px;}
+.fixedBanner a p { display: inline-block;  font-size: 12px; color: #fff;}
+.talkBg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 50;
+    display: none;
+}
+.talkBox {
+    background: #fff;
+    position: fixed;
+    top: 60%; right: 10%;
+    border-radius: 20px;
+    width: 480px; height: 300px;
+    z-index: 51;
+    display: none;
+}
+.talkBox::after {
+    border-top: 25px solid transparent;
+    border-left: 40px solid #fff;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    content: "";
+    position: fixed;
+    bottom: 90px;
+    right: 130px;
+}
+.talkBox .talk {margin: 20px 15px; position: relative;}
+.talkBox .happy {width: 50px; padding-left: 25px;}
+.talkBox .btnclose2 {
+    position: absolute;
+    top: 10px; right: 20px;
+}
+.talkBox .search {
+    position: absolute;
+    top: 160px; right: 65px;
+}
+.talkBox h3 { 
+    position: absolute;
+    top: 10px; left: 90px;
+    font-weight: 600;
+}
+.talkBox  .talk > input {
+    position: absolute;
+    top: 150px; left: 30px;
+    width: 350px; height: 40px;
+    border-radius: 10px;
+    padding-left:10px ;
+}
+.talkBox .tag { 
+    position: absolute;
+    top: 70px; left: 30px;
+}
+.talkBox .tag span {
+    font-size: 14px ;
+    padding: 5px;
+    background: #a3a3a3;
+    color: #fff;
+    border-radius: 5px;
+}
+.talkBox .tag > p {
+    display: inline;
+    font-size: 13px;
+}
+
+/* ------------------------------------------------------- header------------------------------------------------ */
+header { 
+    position: relative; 
+    margin: 50px 20px; 
+    z-index: 300; 
+}
+header .logo { 
+    width: 70%; height: 213px;
+    text-align: center;
+    border-bottom: 1px solid #000000a9;
+    margin-left: 300px;
+}
+header .logo a{display: block; height: 100%;}
+header .logo img { 
+    padding-bottom: 50px;}
+
+header .icon {
+     position: absolute;
+     top: 35px; right: 20px;
+     margin-right: 10px;
+}
+header .icon a { 
+    font-size: 25px; 
+    color: rgba(0, 0, 0, 0.4);
+    padding-left: 10px;
+}
+header .icon .bar {display: none;}
+
+.mobileMenu {display: none;}
+.mobileMenuBg {}
+
+
+
+/* --------------------------------------------------- gnb -------------------------------------------------- */
+
+
+.gnb {
+    width: 100%;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+}
+
+header .gnb > ul { 
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 0 0 350px;
+}
+
+header .gnb > ul > li { 
+    text-align: center;
+    float: left;
+    width: 150px;
+    margin-left: 120px;
+
+}
+header .top:hover {transition: all .5s;}
+header .gnb > ul > li > a {
+    position: relative;
+    display: block;
+    font-size: 0.9378vw;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+    color: #000;
+    /* overflow: hidden; */
+    height: 100%;
+    letter-spacing: 0.06em;
+    line-height: 1.1em;
+} 
+header .gnb > ul > li > a span {
+    position: relative;
+    top: 10px;
+    display: block;
+    width: 250px; height: 80px;
+    transition: 0.3s;
+    margin-left: -40px;
+}
+header .sub { 
+    display: block; 
+    text-align: center;
+    margin: 10px 0 0 0;
+    width: 100%; height: 50px;
+    position: absolute;
+    top: -50px;
+    transition: all .2s;
+    z-index: -1;
+    opacity: 0;
+}
+header .before1 {
+    width: 15px; height: 15px;
+    position: absolute;
+    top: -50px; left: 550px;
+    opacity: 1;
+}
+header .before2 {
+    width: 15px; height: 15px;
+    position: absolute;
+    top: -50px; left: 815px;
+    opacity: 1;
+}
+header .before3 {
+    width: 15px; height: 15px;
+    position: absolute;
+    top: -50px; left: 1080px;
+    opacity: 1;
+}
+header .before4 {
+    width: 15px; height: 15px;
+    position: absolute;
+    top: -50px; left: 1355px;
+    opacity: 1;
+}
+
+header .before1 img,
+header .before2 img,
+header .before3 img,
+header .before4 img{width: 15px; height: 15px;}
+
+header .sub:hover li {transition: all 0.2s;}
+header .sub li:hover a  {width: 100%; display: block; }
+header .sub1 { width: 250px; margin-left: -60px; transition: all .2s;}
+header .sub2 {width: 250px; margin-left: -50px; }
+header .sub3 {width: 400px; margin-left: -90px; }
+header .sub3 li:nth-child(2) a {margin-left: 20px;}
+header .sub3 li a {display: block; width: 100%;}
+header .sub4 {width: 250px; margin-left: -50px;}
+
+header .sub1 li{
+    float: left;
+    width: calc(100%/2);
+}
+
+header .sub2 li {
+    float: left;
+    width: calc(100%/4);
+}
+header .sub3 li{
+    float: left;
+    width: 93px;
+}
+header .sub4 li {
+    float: left;
+    width: calc(100%/3);
+}
+/* ------------------------------------------------------ mainLogin----------------------------------------------- */
+.mainLogin {width: 100%; margin-top: 100px;}
+.mainLogin .snsLogin {
+position: relative;
+text-align: center;
+}
+.mainLogin .snsLogin ul { 
+    position: absolute;
+    top: 15%; left: 50%;
+    transform: translate(-50%, -15%);
+ }
+.mainLogin .snsLogin ul li {
+    float: left;
+    width: 50px;
+}
+.mainLogin .snsLogin p {
+    position: absolute;
+    top: 28%; left: 50%;
+    transform: translate(-50%, -28%);
+    color: rgba(0, 0, 0, 0.4);
+}
+.mainLogin .snsLogin .delivery {
+    text-align: center;
+    margin-top: 110px;
+}
+.Login  {text-align: center; margin: 50px 0; }
+.Login h2 { margin-bottom: 60px;}
+.Login input{
+    width: 450px; height: 45px;
+    margin-bottom: 15px;
+}
+.Login .btn-login, .btn-newLogin {
+    width: 147.5px; height: 35px;
+    margin: 5px 10px 0 0; 
+    background: #000;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.btn-newLogin {margin-right: 0;}
+
+
+/* ------------------------------------------------------ footer----------------------------------------------- */
+footer {
+    width: 100%;
+    border-top: 1px solid #000;
+}
+footer .info {margin: 50px 30px; font-size: 16px;}
+footer .info > ul > li { 
+    float: left; 
+    width: calc(100%/5 - 30px) ;
+    margin-left: 30px;
+    text-align: center;
+}
+footer .info .text{
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+footer .info .infoSub li {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+footer .sns {text-align: center; border-bottom: 1px solid #000; padding-bottom: 25px;}
+footer .sns img { padding-left: 30px; width: 25px;}
+footer section {
+    text-align: center;
+    margin-top: 20px;
+}
+footer section p { font-size: 15px; color: rgba(0, 0, 0, 0.3);}
+

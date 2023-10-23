@@ -1,0 +1,435 @@
+@media screen and (min-width:414px) and (max-width:640px) {
+    body { 
+        width: 100%;
+        position: relative;
+    }
+    .modal {
+        width:100% ;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        display: block;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 30;
+    }
+    .modal .modalCont {
+        top: 40%; left: 50%;
+        transform: translate(-50%, -40%);
+        width: 300px; height: 346px;
+        background: none;
+        display: block;
+        padding: 30px;
+        text-align: center;
+    }
+    .modal .modalCont img {width: 100%; height: auto;}
+    .modal button {
+        position: absolute;
+        bottom: 0; right: 30px;
+        border: 1px solid #dddddd;
+        background: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        padding: 2px 7px;
+    }
+    /* ------------------------------------------------------- .slideUp------------------------------------------------ */
+  
+    /* ------------------------------------------------------- header------------------------------------------------ */
+    header { 
+        max-width: 100%;
+        height: 150px;
+        position: relative;
+        margin: 0;
+    }
+    header .logo { 
+        width: 60px; height: auto;
+        border-bottom: none;
+        position: absolute;
+        margin: 0;
+        top: 25px; left: 20px;
+    }
+    header .logo img { 
+        width: 60px;
+    }
+    header .logo a{ display: block;height: auto;}
+    header .icon {
+        color: rgba(0, 0, 0, 0.5);
+        margin: -10px 25px 0 0 ;
+    }
+    header .icon .btn_search {display: none;}
+    header .icon .btn_lang {display: none;}
+    header .icon .btn_login {font-size: 37px; padding-left: 0; color: rgba(0, 0, 0, 0.5);}
+    header .icon .bar{
+        display: inline-block; 
+        font-size: 38px;
+    }
+    header .gnb {display: none;}
+
+    /* ----------------------------------------------------- mainBg ------------------------------------------- */
+  
+    .swiper2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 200px;
+        position: relative;
+        overflow: hidden;
+        margin-top:-60px;
+      }
+    
+      .box {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .box img {
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+      .nextBox {
+        position: absolute;
+        top: 50%; right: 30px;
+      }
+      .prevBox {
+        position: absolute;
+        top: 50%; left: 30px;
+      }
+    
+
+    /* ---------------------------------------------------- eventBg --------------------------------------------------- */
+    .eventBg {position: relative;}
+    .eventBg li{ 
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 270px;
+        margin-bottom: 50px;
+    }
+    .eventBg li img { 
+        width: 100%; 
+        outline: none;
+        outline-offset:none;
+        transition: all 0.8s;
+    }
+    .eventBg ul li a:hover img {transform: scale(1.04); }
+    .eventBg .text {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        font-size: 20px;
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-weight: 300;
+        color: #f0f0f0;
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        text-align: center;
+    }
+    .eventBg .text2 {
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.856);
+        position: absolute;
+        bottom: 35px; left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    .eventBg .text2 span {
+        font-size: 16px;
+        font-weight: 600;
+        display: block;
+        background: #b96a6a;
+        color: #f7dfdf;
+        padding: 8px 0;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    /* --------------------------------------------------- product ----------------------------------------------------- */
+    .product {position: relative; margin-top: 100px; height: 350px;}
+    .product p { font-size: 15px;}
+    .product > .prodList { 
+        float: left;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        width: 20%; height: 300px;
+    /*     padding: 30px 20px; */
+        margin-left: -1px;
+        text-align: center;
+    }
+    .product > ul > li  {width: 100%;}
+    .product .prodList li a {
+        display: block; 
+        padding: 18px 20px; 
+        position: relative; 
+        font-size: 12px;
+    }
+    
+    /* --------------------------------------------- product 중 tab & swiper 영역 ----------------------------------------- */
+    .tab_cont.on {display: block;}
+    .swiperContainer { height: 350px;}
+    .swiper { width: 100%;}
+    .swiper .swiper-wrapper {width: 250px; height: 300px;}
+    .swiper .swiper-wrapper .swiper-slide {
+        text-align: center;
+        margin-right: 70px;
+        height: 300px;
+    }
+    
+    .swiper .swiper-wrapper .swiper-slide > a {display: block;}
+    .swiper .swiper-wrapper .swiper-slide > a > img { 
+        position: relative; 
+        width: 230px; height: 200px;
+    }
+    /* swiper중  button 영역 */
+    .swiper-button-next::after
+    {font-size: 10px  !important;}
+    .swiper-button-prev::after {font-size: 10px  !important;}
+
+    /* swiper 중 title & img 영역 */
+    .swiper .swiper-wrapper .swiper-slide .title  {
+        position: relative;
+
+        width: 100%; height: 100px;
+        font-size: 10px;
+    }
+    .swiper .swiper-wrapper .swiper-slide .text { font-size: 11px;}
+    .swiper .swiper-wrapper .swiper-slide .price {}
+    .swiper .like > a > img {
+       display: none;
+    }    
+    .mySwiper3 {height: 300px;}
+    /* --------------------------------------------------content영역------------------------------------------------ */
+
+    .content {margin: 80px 0 50px 0 ; height: 300px; text-align: center;}
+    .content > ul li { 
+        float: left;
+        width: calc(100%/3);
+        margin-left: 0;
+    }
+    .content > ul li img {width: 120px; border-radius: 50%;}
+    .content .text { font-size: 12px; margin-top: 10px;}
+
+
+    /* ----------------------------------------------------footer------------------------------------------------------ */
+    footer {
+        width: 100%;
+        border-top: 1px solid #000;
+        overflow: hidden;
+    }
+    footer .info {margin: 50px; font-size: 13px;}
+    footer .info > ul {
+        text-align: center;
+        width: 100%;  
+    }
+    footer .info > ul > li { 
+        float: none;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    footer .info > ul > li:hover .text{
+        border-bottom: 1px solid #000;
+        margin-bottom: -1px;
+    }
+
+    footer .info .infoText{
+        position: relative;
+        width: 450px;
+        font-size: 12px ;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    footer .info .infoText .text {
+        position: relative;
+        height: 30px;
+        display: block;
+        transition: all .3s;
+        margin-bottom: 10px;
+    }
+    footer .info img {
+        position: absolute;
+        top: 0; right: 0;
+        display: inline-block;
+        width: 20px; height: 20px;
+    }
+
+    footer .info .infoSub {text-align: center;}
+    footer .info .infoSub li {
+        margin-bottom: 8px;
+        font-size: 13px;
+        display: none;
+    }
+
+    footer .sns {text-align: center; border-bottom: 1px solid #000;}
+    footer .sns img {width: 25px;}
+
+/* ------------------------------------------------- mobileMenu------------------------------------------- */
+
+header .mobileMenuBg  {
+    position: fixed;
+    top: 0; bottom: 0; right: 0; left: 0 ;
+    background: rgba(0, 0, 0, 0.3);
+    display: none ;
+}
+header .mobileMenu {
+    width: 320px; height:100% ;
+    background: #fff ;
+    position: fixed ;
+    top: 0; right: -350px ;
+    display: block ;
+}
+header .mobileMenu > ul { 
+    width: 100%; height: 100%;
+    text-align: left;
+}
+header .mobileMenu > ul > li {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+header .mobileMenu > ul > li > a { 
+    display: block;
+    padding: 30px;
+    font-size: 17px;
+    width: 150px;
+}
+header .mobileMenu > ul > li:hover > a {
+    text-decoration: underline;
+    transition: all 0.4s;
+}
+header .mobileMenu .text { 
+    text-align: left ;
+    font-size: 20px ;
+    font-weight: 600 ;
+    padding: 30px ;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6) ;
+}
+header .mobileMenu .btnclose {
+    width: 23px ;
+    position: absolute ;
+    right: 20px; top: 50% ;
+    transform: translateY(-50%) ;
+    cursor: pointer ;
+}
+header .mobileMenu .btnDown {
+    width: 30px ; 
+    position: absolute ;
+    right: 20px; top: 30px ;
+    transition: all 0.3s
+    /* transform: translateY(-150px) */ ;
+}
+.subM {background: rgba(0, 0, 0, 0.027);}
+.btnDown.active {transform: rotate(180deg); transition: all 0.3s;}
+header .mobileMenu .btnDown.on ul{ display: block;}
+header .mobileMenu .sns {
+    position: absolute;
+    bottom: 20px; right: 85px; 
+}
+header .mobileMenu .sns a {padding-left: 25px;}
+header .mobileMenu .sns a img{width: 25px;}
+/* ---------------------------------------- mobileMenu > sub ------------------------------------ */
+header .mobileMenu .subM { display : none ; }
+header .mobileMenu .subM li {
+    padding: 8px 30px;
+    color: #888888;
+}
+header .mobileMenu .subM li:last-child a{ 
+    display: block;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+header .mobileMenu .subM li:hover a {
+    text-decoration: underline;
+    color: #000;
+    transition: all 0.5s;
+}
+.mainLogin .snsLogin .delivery {
+    width: 100%;
+}
+.fixedBanner {
+    position: fixed;
+    bottom: 15px; right: 18px;
+}
+.fixedBanner {
+
+    width: 65px; height: 70px;
+    background: rgba(238, 127, 75, 0.856);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 100;
+    text-align: center;
+}
+.fixedBanner a {display: block;}
+.fixedBanner a img { width: 31px; height: 31px; padding:8px 15px 0 15px;}
+.fixedBanner a p { display: inline-block;  font-size: 9px; color: #fff;}
+
+.talkBg {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 50;
+    display: none;
+}
+.talkBox {
+    background: #fff;
+    position: fixed;
+    top: 52%; right: 130px;
+    border-radius: 20px;
+    width: 250px; height: 305px;
+    z-index: 51;
+    display: none;
+}
+.talkBox::after {
+    border-top: 25px solid transparent;
+    border-left: 40px solid #fff;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    content: "";
+    position: fixed;
+    bottom: 90px;
+    right: 78px;
+}
+.talkBox .talk {margin: 20px 15px; position: relative;}
+.talkBox .happy {width: 25px; padding-left: 5px;}
+.talkBox .btnclose2 {
+    position: absolute;
+    top: 10px; right: 20px;
+}
+.talkBox .search {
+    position: absolute;
+    top: 160px; right: 45px;
+}
+.talkBox h3 { 
+    font-size: 14px;
+    position: absolute;
+    top: 5px; left: 40px;
+    font-weight: 600;
+}
+.talkBox  .talk > input {
+    position: absolute;
+    top: 150px; left: 0;
+    width: 180px; height: 40px;
+    border-radius: 10px;
+    padding-left:10px ;
+}
+.talkBox .tag { 
+    position: absolute;
+    top: 60px; left: 10px;
+}
+.talkBox .tag span {
+    font-size: 14px ;
+    padding: 5px;
+    background: #a3a3a3;
+    color: #fff;
+    border-radius: 5px;
+}
+.talkBox .tag > p {
+    display: inline;
+    font-size: 13px;
+}
+
+}

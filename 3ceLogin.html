@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ceLogin</title>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/3ceLogin.css">
+    <link rel="stylesheet" href="css/3ceLoginMobil.css">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+
+       <!-----------header 시작     (머리)-->
+       <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="#" class="btn_search"><i class="xi-search"></i></a>
+            <a href="#" class="btn_lang"><i class="xi-globus"></i></a>
+            <a href="3ceLogin.html" class="btn_login"><i class="xi-user"></i></a>
+            <span class="bar"><i class="xi-bars"></i></span>
+        </div>
+
+<!----------- mobileMenu 시작-->
+<div class="mobileMenuBg"></div>
+<div class="mobileMenu">
+    <ul class="accordion">
+        <li class="text">MENU
+            <img class="btnclose" src="img/close.svg" alt="btnCLose">
+        </li>
+        <li class="show">
+            <a href="#a">WHAT'S NEW
+                <img class="btnDown" src="img/btndown.png" alt="btnDown">
+            </a>
+            <ul class="subM">
+                <li><a href="#a">공식몰 혜택</a></li>
+                <li><a href="#a">공식몰 듀오세트</a></li>
+            </ul>
+        </li> 
+        <li class="show">
+            <a href="#a">BEAUTY
+                <img class="btnDown" src="img/btndown.png" alt="btnDown">
+            </a>
+            <ul class="subM">
+                <li><a href="#a">FACE</a></li>
+                <li><a href="#a">LIP</a></li>
+                <li><a href="#a">EYE</a></li>
+                <li><a href="#a">CHEEK</a></li>
+                <li><a href="#a">NAIL</a></li>
+                <li><a href="#a">BODY</a></li>
+                <li><a href="#a">TOOL</a></li>
+                <li><a href="#a">ACC</a></li>
+            </ul>
+        </li>
+        <li class="show">
+            <a href="#a">FASHION
+                <img class="btnDown" src="img/btndown.png" alt="btnDown">
+            </a>
+            <ul class="subM">
+                <li><a href="#a">COLLECTION</a></li>
+                <li><a href="#a">LOOK BOOK</a></li>
+                <li><a href="#a">OUTTER</a></li>
+                <li><a href="#a">TOP</a></li>
+                <li><a href="#a">BOTTOM</a></li>
+                <li><a href="#a">DRESS</a></li>
+                <li><a href="#a">SKIRT</a></li>
+                <li><a href="#a">ACC</a></li>
+            </ul>
+        </li>
+        <li class="show">
+            <a href="#a">ABOUT 3CE
+                <img class="btnDown" src="img/btndown.png" alt="btnDown">
+            </a>
+            
+            <ul class="subM">
+                <li><a href="#a">공지사항</a></li>
+                <li><a href="#a">Q&A</a></li>
+                <li><a href="#a">EVENT</a></li>
+            </ul>
+        </li>
+        <li class="show">
+            <a href="#a">MYPAGE
+                <img class="btnDown" src="img/btndown.png" alt="btnDown">
+            </a>
+            <ul class="subM">
+                <li><a href="#a">로그인/로그아웃</a></li>
+                <li><a href="#a">배송현황</a></li>
+                <li><a href="#a">장바구니</a></li>
+                <li><a href="#a">개인정보변경</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="sns">
+        <a href="#">
+            <img src="img/icon.fb.png" alt="facebook">
+        </a>
+        <a href="#">
+            <img src="img/icon.ist.png" alt="instagram">
+        </a>
+        <a href="#">
+            <img src="img/icon.youtube.png" alt="youtube">
+        </a>
+    </div>
+</div>
+<!-----------gnb 시작-->
+
+<nav class="gnb">
+    <ul class="clear">
+        <li>
+            <a class="slider slider1" href="#">
+                <span class="top1">WHAT'S NEW</span>
+            </a>
+            <p class="before1"><img src="img/menu.png" alt="무늬"></p>
+            <ul class="sub sub1 clear">
+                <li><a href="#">공식몰 혜택</a></li>
+                <li><a href="#">공식몰 듀오세트</a></li>
+            </ul>
+        </li>
+        <li><a class="slider slider2" href="#">
+            <span class="top2">BEAUTY</span>
+            </a>
+            <p class="before2"><img src="img/menu.png" alt="무늬"></p>
+            <ul class="sub sub2">
+                <li><a href="#">FACE </a></li>
+                <li><a href="#">LIP </a></li>
+                <li><a href="#">EYE </a></li>
+                <li><a href="#">CHEEK </a></li>
+            </ul>
+        </li>
+        <li>
+            <a class="slider slider3" href="#">
+                <span class="top3">FASHION</span>
+            </a>
+            <p class="before3"><img src="img/menu.png" alt="무늬"></p>
+            <ul class="sub sub3">
+                <li><a href="#">COLLECTION </a></li>
+                <li><a href="#">OUTTER</a></li>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">BOTTOM</a></li>
+            </ul>
+        </li>
+        <li><a class="slider slider4" href="#">
+                <span class="top4">ABOUT 3CE</span>
+            </a>
+            <p class="before4"><img src="img/menu.png" alt="무늬"></p>
+            <ul class="sub sub4">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">EVENT</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+    </header>
+
+<!-----------mainLogin 시작-->
+        <div class="mainLogin">
+            <div class="Login">
+                <h2>로그인</h2>
+                <div class="userId">
+                    <input type="email" class="form-control" placeholder="email" id="loginEmail">
+                </div>
+                <div class="userPw">
+                    <input type="password" class="form-control" placeholder="pw" id="loginPassword">
+                </div>
+                <button type="submit" class="btn-login" id="loginButton">Login</button>
+                <button type="submit" class="btn-newLogin" id="logoutButton">Join in</button>
+            </div>
+
+            <div class="snsLogin">
+                <ul>
+                    <li>
+                        <a href="#a"><img src="img/fbLog.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#a"><img src="img/kakaoLog.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#a"><img src="img/naverLog.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#a"><img src="img/appleLog.png" alt=""></a>
+                    </li>
+                </ul>
+                <p>sns로 간편하게 로그인</p>
+                <img src="img/login_exp.jpg" class="delivery" alt="">
+            </div>  
+        </div>
+
+<!-----------fixedBanner 시작-->
+            <section class="fixedBanner">
+                <div class="chat">
+                    <a href="#a">
+                        <img src="img/icon_chat.png" alt="채팅/상담아이콘">
+                        <p>1:1상담봇</p>
+                    </a>
+
+                </div>
+            </section>
+            <section class="talkBg"></section>
+                <div class="talkBox">
+                    <div class="talk">
+                        <img class="btnclose2" src="img/close.svg" alt="btnCLose">
+                        <img class="happy" src="img/happy.png" alt="help">
+                        <h3>How can I help you?</h3>
+                        <input type="text" placeholder="무엇을 도와드릴까요?">
+                        <a href="#a">
+                            <img class="search" src="img/search.png" alt="search">
+                        </a>
+                        <div class="tag">
+                            <span>연관 검색어</span>
+                            <p href="#a">#여름쿨톤</p>
+                            <p href="#a">#매트립스틱</p>
+                            <p href="#a">#스킨</p>
+                            <p href="#a">#가을컬렉션</p>
+                            <p href="#a">#파운데이션</p>
+                            <p href="#a">#EYE</p>
+                            <p href="#a">#리무버</p>
+                            <p href="#a">#파스널 컬러</p>
+                            <p href="#a">#Lip</p>
+                        </div>
+                    </div>
+                </div>
+
+<!-------------footer 시작    (바닥)-->
+        <footer>
+            <div class="info">
+                <ul class="clear">
+                    <li class="infoText"><p class="text">CUSTOMER CENTER</p>
+                        <ul class="infoSub">
+                            <li>0502 - 707 - 8888</li>
+                            <li>평일 09:30 - 18:00</li>
+                            <li>점심 12:00 - 13:00</li>
+                            <li>휴무 토, 일, 공휴일</li>
+                        </ul>
+                    </li>
+                    <li class="infoText"><p class="text">DELIVERY</p>
+                        <ul class="infoSub">
+                            <li><a href="#">배송조회</a></li>
+                            <li>반품 주소 : 경기도 이천시 대월면 대월로932번길 94 A동</li>
+                            <li>로젠택배 3PL 물류센터 항시 이용</li>
+                        </ul>
+                    </li>
+                    <li class="infoText"><p class="text">STORE</p>
+                        <ul class="infoSub">
+                            <li><a href="#">플러그십</a></li>
+                            <li><a href="#">백화점</a></li>
+                            <li><a href="#">면세점</a></li>
+                            <li><a href="#">올리브영</a></li>
+                            <li><a href="#">해외</a></li>
+                        </ul>
+                    </li>
+                    <li class="infoText"><p class="text">HELP</p>
+                        <ul class="infoSub">
+                            <li>고객지원</li>
+                            <li>쇼핑 가이드</li>
+                            <li>제휴문의</li>
+                        </ul>
+                    </li>
+                    <li class="infoText"><p class="text">OTICE</p>
+                        <ul class="infoSub">
+                            <li>회원공지</li>
+                            <li>이벤트</li>
+                            <li>회사소개</li>
+                            <li>해외배송안내</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sns">
+                <a href="#">
+                    <img src="img/icon.fb.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/icon.ist.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/icon.tiktok.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="img/icon.youtube.png" alt="">
+                </a>
+            </div>
+            <section>
+                <p class="text">대표이사. 신지은 | 사업자등록번호. 130-86-24632 │</p>
+                <p class="text">통신판매업신고. 2014-서울마포-0835 │ 개인정보보호책임자. 한관현 [사업자정보확인]</p>
+                <p class="text">회사명. ㈜난다 │ 전화. 0502-707-8888 │ 팩스. 02-335-5274 │ 이메일. nanda@stylenanda.com │ 주소. 서울특별시 마포구 잔다리로 32 서문빌딩 2~6F
+                ⓒ 2017. NANDA All rights reserved. │ 개인정보처리방침 │ 영상정보처리기기운영･관리방침 │ 이용약관 │ Hosting by cafe24</p>
+            </section>
+</footer>            
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/3ce.js"></script>
+</body>
+</html>
